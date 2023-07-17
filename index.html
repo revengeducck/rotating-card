@@ -185,9 +185,10 @@
                         <div class="cover">
                             <img src="images/Kermit2.jpg"/>
                         </div>
-                        <div class="user">
+                        <div class="user" onmouseover="mostrarPopup()" onmouseout="ocultarPopup()">
                             <img class="img-circle" src="images/kermit.jpg"/>
-                        </div>
+                          </div>
+                          <div id="popup">Información adicional del usuario</div>   
                         <div class="content">
                             <div class="main">
                                 <h3 class="name">Sir kermit</h3>
@@ -468,8 +469,16 @@
 
 // Llama a la función para obtener los datos de Microsoft Graph
 obtenerDatosMicrosoftGraph();
-	
 
+const popup = document.getElementById('popup');
+
+function mostrarPopup() {
+  popup.style.display = 'block';
+}
+
+function ocultarPopup() {
+  popup.style.display = 'none';
+}
 </script>
 
 </body>
