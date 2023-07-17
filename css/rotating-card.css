@@ -59,6 +59,13 @@ body {
 	background-color: #FFF;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
 }
+#popup {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
 
 /* front pane, placed above back */
 .front {
